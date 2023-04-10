@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tim's Picks</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=JetBrains+Mono' rel='stylesheet'>
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #d21f1f;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        th, td {
+            text-align: center;
+            padding: 8px;
+            border: 1px solid #d21f1f;
+        }
+        th {
+            background-color: #d21f1f;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Model 1 Perdicted Odds</h1>
+        <h2>Pick # 1</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Predicted Odds (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data1 %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ "{:.2%}".format(row[1]|safe|float) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h2>Pick # 2</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Predicted Odds (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data2 %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ "{:.2%}".format(row[1]|safe|float) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <h2>Pick # 3</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Predicted Odds (%)</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data3 %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ "{:.2%}".format(row[1]|safe|float) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

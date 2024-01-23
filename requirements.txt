@@ -1,13 +1,8 @@
 Flask
-csv
-datetime
-time
 requests
 twilio
 numpy
-sklearn
+scikit-learn
 pandas
-os
-bs4
+beautifulsoup4
 unidecode
-random

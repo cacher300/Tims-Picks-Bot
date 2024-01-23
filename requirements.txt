@@ -1,0 +1,13 @@
+Flask
+csv
+datetime
+time
+requests
+twilio
+numpy
+sklearn
+pandas
+os
+bs4
+unidecode
+random

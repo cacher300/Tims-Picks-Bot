@@ -3,7 +3,7 @@ def timer():
   import datetime
   import time
   import requests
-  from Text import texts
+  #from Text import texts
   from model import main
 
   while True:

@@ -22,9 +22,9 @@ def timer():
               f.write(source_code)
           print("Website source code extracted")
           main()
-          texts()
+          #texts()
+          #Removing texts right now bc it costs too much lol
   
-          # Add any other code you want to run at this time
   
       # Wait for one second before checking the time again
       time.sleep(1)

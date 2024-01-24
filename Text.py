@@ -2,10 +2,10 @@ def texts():
   import csv
   from twilio.rest import Client
   # Replace with your Twilio account SID, auth token, and phone numbers
-  account_sid = 'AC0eb057fb44d08943f92000230268f4ae'
-  auth_token = '4e289897f3141444e6cca6690dd4761f'
-  from_number = '+19295564501'
-  to_number = '+19053598346'
+  account_sid = ''
+  auth_token = ''
+  from_number = '+'
+  to_number = '+'
   
   def send_message_for_csv(csv_file):
       # Read the CSV file and extract the top 3 items

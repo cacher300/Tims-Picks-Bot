@@ -26,7 +26,7 @@ def schedule_games_run():
     upcoming_games = get_upcoming_games(api_url)
 
     for game_time in upcoming_games:
-        run_time = game_time + timedelta(minutes=20)
+        run_time = game_time + timedelta(minutes=23)
         wait_seconds = (run_time - datetime.utcnow()).total_seconds()
 
         if wait_seconds > 0:

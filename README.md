@@ -14,6 +14,6 @@ Visit [Tim's Picks Bot](https://timspicks.lucaspijl.com/) and navigate to model 
 
 ## Feedback and Contributions
 
-I welcome your feedback and contributions to improve **Tim's Picks Bot**. Feel free to fork the project and submit pull requests. Contact me at foamfollower1 on discord for any issues
+I welcome your feedback and contributions to improve **Tim's Picks Bot**. Feel free to fork the project and submit pull requests.
 
 
